@@ -1,0 +1,7 @@
+task1:
+  title: "Buy Groceries"
+  done: false
+
+task2:
+  title: "Read Book"
+  done: true
