@@ -1,7 +1,9 @@
 task1:
   title: "Buy Groceries"
   done: false
+  user: admin
 
 task2:
   title: "Read Book"
   done: true
+  user: admin
