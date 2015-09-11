@@ -56,6 +56,7 @@ LrjisApi::Application.routes.draw do
       end
 
       resources :users, only: [:show, :create, :update, :destroy], constraints: { id: /.*/ }
+      resources :todos, only: [:show, :create, :update, :destroy]
     end
   end
 
