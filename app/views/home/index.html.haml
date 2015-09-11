@@ -6,16 +6,19 @@
 %br
 %br
 
-%h1 Todos
-%table.table.table-striped.table-bordered.table-hover
-  %tbody
-    %tr
-      %th ID
-      %th Title
-      %th Status
-    - @todos.each do |todo|
+- if @todos.present?
+  %h2 Todos
+  %table.table.table-striped.table-bordered.table-hover
+    %tbody
       %tr
-        %td= todo.id
-        %td= todo.title
-        %td= todo.done
+        %th ID
+        %th Title
+        %th Status
+      - @todos.each do |todo|
+        %tr
+          %td= todo.id
+          %td= todo.title
+          %td= todo.done
+- else
+  %h2 No Todos added yet
 
