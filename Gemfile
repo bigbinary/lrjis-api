@@ -86,6 +86,8 @@ gem 'email_prefixer'
 gem 'unicorn', group: [:staging, :production]
 
 group :development do
+  # for debugging
+  gem 'pry'
 
   # application server for development
   gem 'thin'
