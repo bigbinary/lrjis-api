@@ -1,2 +1,21 @@
 %span.home-message
-  This is home page.
+  %br
+  %br
+  %h3= "Your API key is: #{current_user.api_key}"
+
+%br
+%br
+
+%h1 Todos
+%table.table.table-striped.table-bordered.table-hover
+  %tbody
+    %tr
+      %th ID
+      %th Title
+      %th Status
+    - @todos.each do |todo|
+      %tr
+        %td= todo.id
+        %td= todo.title
+        %td= todo.done
+
