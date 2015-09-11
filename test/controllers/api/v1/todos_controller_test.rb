@@ -6,9 +6,14 @@ class Api::V1::TodosControllerTest < ActionController::TestCase
     @user = users(:admin)
   end
 
+  def test_index_success
+    get :index, api_key: @user.api_key
+    assert_equal 200, response.status
+  end
+
   def test_show_success
     todo = todos(:task1)
-    get :show, id: todo.id, api_key: users(:admin).api_key
+    get :show, id: todo.id, api_key: @user.api_key
     assert_equal 200, response.status
   end
 
