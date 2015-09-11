@@ -6,6 +6,11 @@ class Api::V1::TodosController < Api::V1::BaseController
   before_action :set_todo, only: [:show, :update, :destroy]
   before_action :fail_if_invalid_todo_id, only: [:show, :update, :destroy]
 
+  def index
+    todos = @todo_user.todos.select(:id, :title, :done)
+    render json: {todos: todos}, status: :ok
+  end
+
   def show
     render json: {todo: {title: @todo.title, done: @todo.done}}, status: :ok
   end
