@@ -6,6 +6,7 @@ admin:
   reset_password_token: 5h632xrnASqFanDhKQsB8
   role: 'super_admin'
   authentication_token: 5h632xrnASqFanDhKQsB8
+  api_key: 987e95ed-e461-4403-854d-395c5f335280
 
 nancy:
   email: nancy.smith@example.com
@@ -14,3 +15,4 @@ nancy:
   encrypted_password: '$2a$10$3OF9YyLG6D8P8EqFFdudmeIUtIlnX2usIFYhAJ77pep5y93BLuSuu' #welcome
   reset_password_token: 5h632xrnASsFanDhKQsB7
   authentication_token: 5h632xrnASqFanDhKQsB8
+  api_key: c9bd6c81-71d0-4289-a1fa-a733db755e33
