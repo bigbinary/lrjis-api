@@ -80,6 +80,9 @@ gem 'mail_interceptor', github: 'bigbinary/mail_interceptor', group: [:developme
 # Adds prefix to the subject in emails
 gem 'email_prefixer'
 
+# Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible.
+gem 'rack-cors', :require => 'rack/cors'
+
 # HTTP server for Rack applications for staging and production
 # See https://github.com/bigbinary/wheel/issues/43 for why unicorn is
 # not used in development.
